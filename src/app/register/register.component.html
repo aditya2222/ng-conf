@@ -1,0 +1,80 @@
+<div class="container">
+  <form class="" action="thankyou.php" method="post">
+    <div class="example-container">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Name" name="name" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Position" name="position" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Oraganizing Institute" name="organizer" required>
+      </mat-form-field>
+
+
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Mailing Address" name="mail" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Country" name="country" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="email" matInput placeholder="Author email" name="author" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="number" matInput placeholder="Phone Number" name="phone" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Name Of The Author(s)" name="nameofauthor" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Title Of Paper" name="title" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Broad Area Of The Paper" name="broadarea" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Number and name of accompanying person" name="accompany" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Date of arrivals (dd/mm/yy)" name="arrivaldate" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="text" matInput placeholder="Date of departure (dd/mm/yy)" name="departuredate" required>
+      </mat-form-field>
+
+      <mat-toolbar>Accomodation</mat-toolbar>
+
+<h4>
+  Required <input type="radio" name="radio1" value="required" required>
+  Not Required <input type="radio" name="radio1" value="notrequired"WWWW>
+</h4>
+
+      <mat-toolbar>Mode Of Payment</mat-toolbar>
+      <h4>
+        Online <input type="radio" name="radio2" (click)="onlineClicked()" value="online required" required>
+        Onspot <input type="radio" name="radio2"(click)="onlinenotclicked()" value="onspot">
+        Demand Draft <input type="radio" name="radio2" (click)="onlinenotclicked()" value="demandDraft">
+      </h4>
+<div class="" *ngIf="online">
+  <button mat-raised-button color="primary" style="width:100%; margin:20px" (click)="redirect()" type="button">Pay Online</button>
+</div>
+    </div>
+      <button mat-raised-button color="warn" type="submit">Submit</button>
+
+
+  </form>
+
+</div>
